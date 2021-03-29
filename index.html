@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Random Nummer</title>
-</head>
-<body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Random</title>
+	</head>
+	<body>
+		<h1>Random Person</h1>
+		<input type="text" id="teilnehmer" placeholder="Name des Teilnehmers" />
+		<button id="knopf">Person hinzufügen</button>
 
-<div id="wrapper">
-    <h1>Auslose Trommel<br>
-    <div><input type="text" class="item" size="30" onfocus="this.value=''" value="" />
-    <div><input type="text" class="item" size="30" onfocus="this.value=''" value="" />
-    <div><input type="text" class="item" size="30" onfocus="this.value=''" value="" />
-    <div><input type="text" class="item" size="30" onfocus="this.value=''" value="" /><br>
-    <h6>Ergebnis</h6>
-    <span id="randomItem">Empty</span><br>
+		<h2>Teilnehmerliste</h2>
+		<ul id="teilnehmerliste"></ul>
+		<button id="loeschen">Liste leeren</button>
 
-    <button id="button" onclick="random()">Generieren</button><br>
+		<h2>Ermittlung der Gewinner</h2>
+		<input type="text" id="anzahlGewinner" placeholder="Anzahl Gewinner" />
+		<button id="ermitteln">Gewinner ermitteln</button><br />
 
-</div><br>
-<hr>
-<h6>Lottozahl</h6>
-<div class="output">000000000000</div>
-<button id="submit">Zufällige Lottozahl</button>
+		<hr />
 
-<script src="script.js" prevent></script>
-</body>
+		<h1>Lottozahl</h1>
+		<div class="output">000000000000</div>
+		<button id="submit">Zufällige Lottozahl</button>
+
+		<script src="script.js" prevent></script>
+	</body>
 </html>
